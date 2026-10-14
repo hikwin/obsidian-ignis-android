@@ -46,7 +46,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Android 本地 Web 运行环境"
+                    android:text="Obsidian 本地 Web 运行环境"
                     android:textColor="@color/obsidian_text_sub"
                     android:textSize="12sp" />
             </LinearLayout>
