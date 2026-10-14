@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/obsidian_card">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📂 打开本地文件夹为库"
+        android:textColor="@color/obsidian_text"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="可使用系统文件管理器选择，或直接输入手机本地路径："
+        android:textColor="@color/obsidian_text_sub"
+        android:textSize="12sp" />
+
+    <!-- 快捷打开系统文件夹选择器 -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBrowseSystem"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="14dp"
+        android:text="🔍 打开系统文件选择器"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:cornerRadius="8dp"
+        app:backgroundTint="@color/obsidian_primary" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="常用手机目录快速填入："
+        android:textColor="@color/obsidian_text_sub"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPresetDocs"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:paddingHorizontal="4dp"
+            android:text="Documents"
+            android:textColor="@color/obsidian_accent"
+            android:textSize="11sp"
+            app:cornerRadius="6dp"
+            app:strokeColor="@color/obsidian_border" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPresetDownload"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="6dp"
+            android:layout_weight="1"
+            android:paddingHorizontal="4dp"
+            android:text="Download"
+            android:textColor="@color/obsidian_accent"
+            android:textSize="11sp"
+            app:cornerRadius="6dp"
+            app:strokeColor="@color/obsidian_border" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPresetRoot"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="6dp"
+            android:layout_weight="1"
+            android:paddingHorizontal="4dp"
+            android:text="存储根目录"
+            android:textColor="@color/obsidian_accent"
+            android:textSize="11sp"
+            app:cornerRadius="6dp"
+            app:strokeColor="@color/obsidian_border" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="手机本地文件夹绝对路径："
+        android:textColor="@color/obsidian_text_sub"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/etLocalPath"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_input_box"
+        android:hint="/storage/emulated/0/Documents/MyVault"
+        android:textColorHint="@color/obsidian_text_sub"
+        android:paddingHorizontal="12dp"
+        android:singleLine="true"
+        android:textColor="@color/obsidian_text"
+        android:textSize="13sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="知识库显示名称（可选，默认使用文件夹名）："
+        android:textColor="@color/obsidian_text_sub"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/etLocalVaultName"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_input_box"
+        android:hint="例如: 我的本地笔记"
+        android:textColorHint="@color/obsidian_text_sub"
+        android:paddingHorizontal="12dp"
+        android:singleLine="true"
+        android:textColor="@color/obsidian_text"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCancelLocalVault"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textColor="@color/obsidian_text_sub" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnConfirmLocalVault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="加载为库"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/obsidian_primary" />
+    </LinearLayout>
+
+</LinearLayout>

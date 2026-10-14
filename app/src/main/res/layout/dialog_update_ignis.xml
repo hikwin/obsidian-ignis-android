@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/obsidian_card">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🔄 更新 Ignis 适配组件"
+        android:textColor="@color/obsidian_text"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="从 GitHub Releases (hikwin/ignis) 下载最新 ignis-shims.zip，解压更新 shim-loader.js 与 ignis-ui.js，并自动匹配支持的 Obsidian 版本。"
+        android:textColor="@color/obsidian_text_sub"
+        android:textSize="12sp" />
+
+    <!-- 当前组件与支持状态展示 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_input_box"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvCurrentIgnisStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前组件: 加载中..."
+            android:textColor="@color/obsidian_text"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvCurrentObsidianSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="支持 Obsidian: 加载中..."
+            android:textColor="@color/obsidian_accent"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- 镜像加速源选择 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="下载源 / 镜像加速:"
+        android:textColor="@color/obsidian_text"
+        android:textSize="13sp" />
+
+    <Spinner
+        android:id="@+id/spMirror"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/bg_input_box"
+        android:popupBackground="@color/obsidian_card" />
+
+    <!-- 进度与日志展示 -->
+    <LinearLayout
+        android:id="@+id/layoutProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="14dp"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/pbDownload"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:max="100"
+            android:progress="0"
+            android:progressTint="@color/obsidian_primary" />
+
+        <TextView
+            android:id="@+id/tvProgressStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="准备中..."
+            android:textColor="@color/obsidian_text"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvLog"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_input_box"
+            android:padding="8dp"
+            android:scrollbars="vertical"
+            android:textColor="@color/obsidian_text_sub"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <!-- 按钮组 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCancel"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关闭"
+            android:textColor="@color/obsidian_text_sub" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnStartUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="开始检查并更新"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/obsidian_primary" />
+    </LinearLayout>
+
+</LinearLayout>

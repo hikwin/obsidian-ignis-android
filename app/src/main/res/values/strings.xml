@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OBServer</string>
+    <string name="server_title">本地 Web 服务</string>
+    <string name="server_running">服务正在运行</string>
+    <string name="server_stopped">服务已停止</string>
+    <string name="btn_start_server">启动服务</string>
+    <string name="btn_stop_server">停止服务</string>
+    <string name="btn_open_webview">在应用内打开 Obsidian</string>
+    <string name="btn_open_browser">在外部浏览器中访问</string>
+    <string name="btn_copy_url">复制访问地址</string>
+    <string name="core_title">Obsidian 核心状态</string>
+    <string name="btn_download_core">下载 / 更新核心</string>
+    <string name="vault_title">知识库 (Vaults) 管理</string>
+    <string name="btn_create_vault">新建知识库</string>
+</resources>

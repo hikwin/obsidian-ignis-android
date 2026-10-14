@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.AppTemplate" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/obsidian_primary</item>
+        <item name="colorPrimaryVariant">@color/obsidian_primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/obsidian_accent</item>
+        <item name="colorSecondaryVariant">@color/obsidian_primary_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:textColorPrimary">@color/obsidian_text</item>
+        <item name="android:textColorSecondary">@color/obsidian_text_sub</item>
+        <item name="android:statusBarColor">@color/obsidian_card</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

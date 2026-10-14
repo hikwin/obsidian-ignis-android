@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Obsidian 风格优雅配色 -->
+    <color name="obsidian_primary">#7C3AED</color>
+    <color name="obsidian_primary_dark">#6D28D9</color>
+    <color name="obsidian_accent">#A855F7</color>
+    <color name="obsidian_bg">#18181B</color>
+    <color name="obsidian_card">#27272A</color>
+    <color name="obsidian_border">#3F3F46</color>
+    <color name="obsidian_text">#F4F4F5</color>
+    <color name="obsidian_text_sub">#A1A1AA</color>
+
+    <color name="status_green">#10B981</color>
+    <color name="status_red">#EF4444</color>
+
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#7C3AED</color>
+    <color name="purple_700">#6D28D9</color>
+    <color name="teal_200">#10B981</color>
+    <color name="teal_700">#047857</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+</resources>
