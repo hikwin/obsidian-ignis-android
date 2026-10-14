@@ -20,7 +20,7 @@
      - `/vault-files/*`：静态媒体与附件支持（图片、PDF、音视频等流媒体分发）
 
 2. **官方核心一键下载与自动 ASAR 解压**：
-   - 遵守 Obsidian 官方 EULA 许可协议，未内置打包官方专有文件，保持 APK 纯净小巧（约 5.5MB）。
+   - 遵守 Obsidian 官方 EULA 许可协议，未内置打包官方专有文件，保持 APK 纯净小巧。
    - 用户在应用内点击“下载 / 更新核心”，系统将从 GitHub Releases 官方下载 `obsidian-x.x.x.asar.gz`。
    - 提供 GitHub 加速镜像节点（ghfast / ghproxy）供国内网络快速下载。
    - 原生高性能解压引擎（Gzip 流式解压 + ASAR 归档文件提取），全自动部署至专属存储目录。
